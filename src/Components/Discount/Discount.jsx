@@ -3,7 +3,7 @@
 const Discount = () => {
     return (
    <div className="max-w-screen-xl mx-auto px-8 md:px-8 lg:px-24 py-5 my-5 ">
-    <h1 className="text-center text-4xl text-[#1a1c28] my-4 underline">Discount</h1>
+    <h1 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-[#1a1c28] text-center my-5">Discount</h1>
 
 
 <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
