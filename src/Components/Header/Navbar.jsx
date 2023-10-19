@@ -1,12 +1,33 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import toast from "react-hot-toast";
+import UseAuth from "../../Hooks/UseAuth";
 
 
 const Navbar = () => {
+  const { user,logOut} = UseAuth();
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
       };
+
+      const handlelogOut = e =>{
+        e.preventDefault()
+        logOut()
+        .then(result =>{
+            toast.success('logout successFully')
+            console.log(result)
+        })
+        .catch(error =>{
+            console.log(error)
+        })
+    }
+
+
+
+
+
+
 
       const NabLinks = <>
       <ol><NavLink 
@@ -40,22 +61,22 @@ const Navbar = () => {
             {NabLinks}
           </div>
           <div className="flex items-center hidden lg:inline-flex">
-          {/* {
+           {
             user?<div className="dropdown dropdown-end flex justify-center items-center">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
                     <img src={user.photoURL} alt={user.displayName} />
                 </div>
             </label>
-            <button className="btn bg-[#FF630E] text-white"
+            <button className="btn bg-[#8696a0] text-white"
                         onClick={handlelogOut}
                     >Logout</button>
             </div>
-            : 
-          } */}
-          <> <Link to='/login'>
+            :   <> <Link to='/login'>
             <button className="btn bg-[#8696a0] text-white">Login</button>
             </Link></>
+          } 
+        
           </div>
           <div className="md:hidden flex items-center">
             <button onClick={toggleMenu} className="text-black">
@@ -72,7 +93,7 @@ const Navbar = () => {
         {menuOpen && (
           <div className="md:hidden text-black mt-2 space-y-4">
            {NabLinks}
-             {/* {
+               {
             user?<div className="dropdown dropdown-end flex justify-center items-center mt-4">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
@@ -83,11 +104,11 @@ const Navbar = () => {
                         onClick={handlelogOut}
                     >Logout</button>
             </div>
-            : 
-          } */}
-          <> <Link to='/login'>
+            :  <> <Link to='/login'>
             <button className="btn bg-[#8696a0] text-white">Login</button>
-            </Link></>
+            </Link></> }
+          
+         
          </div>
         )}
         </nav>

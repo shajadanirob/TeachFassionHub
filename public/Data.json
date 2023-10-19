@@ -1,0 +1,27 @@
+[
+    {
+      "category": "samsung",
+      "image": "https://i.ibb.co/ThXqnGQ/pexels-obi-onyeador-13080838.jpg"
+    },
+    {
+      "category": "apple",
+      "image": "https://i.ibb.co/1nZyKjk/pexels-armand-valendez-544295.jpg"
+    },
+    {
+      "category": "lenovo",
+      "image": "https://i.ibb.co/R0hKYS8/Lenovo-Cover.webp"
+    },
+    {
+      "category": "asus",
+      "image": "https://i.ibb.co/gTgWBfj/HD-wallpaper-asus-carbon-logo-grunge-art-carbon-background-creative-asus-black-logo-asus-logo-asus.jpg"
+    },
+    {
+      "category": " sony",
+      "image": "https://i.ibb.co/TRjZ2Lm/Sony-Logo-1957.png"
+    },
+    {
+      "category": "toshiba",
+      "image": "https://i.ibb.co/s6Pwv2P/TOSHIBA-Logo.png"
+    }
+  ]
+  
