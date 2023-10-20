@@ -21,13 +21,13 @@ const router = createBrowserRouter([
         {
             path:'/',
             element:<Home></Home>,
-            loader:() =>  fetch('https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/products')
+            loader:() =>  fetch('  https://teachfausion-server-site-jbxvnszc0-shajada-nirobs-projects.vercel.app/products')
         },
         {
           path:'/products/:brand',
           errorElement:<Error></Error>,
           element:<ProductsCategory></ProductsCategory>,
-          loader:({params})=>fetch(`https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/products/${params.brand}`)
+          loader:({params})=>fetch(`  https://teachfausion-server-site-jbxvnszc0-shajada-nirobs-projects.vercel.app/products/${params.brand}`)
 
         },
         {
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         element: <PrivetRoute>
           <MyCart></MyCart>
         </PrivetRoute>,
-        loader: () => fetch('https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/addCard')
+        loader: () => fetch('  https://teachfausion-server-site-jbxvnszc0-shajada-nirobs-projects.vercel.app/addCard')
        },
        {
         path:'/login',
@@ -62,13 +62,13 @@ const router = createBrowserRouter([
         element: <PrivetRoute>
           <ProductsDetails></ProductsDetails>
         </PrivetRoute>,
-        loader: ({params}) => fetch(`https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/product/${params.id}`)
+        loader: ({params}) => fetch(` https://teachfausion-server-site-jbxvnszc0-shajada-nirobs-projects.vercel.app/product/${params.id}`)
        },
        {
         path:'/update/:id',
         errorElement:<Error></Error>,
         element:<PrivetRoute><UpdateProducts></UpdateProducts></PrivetRoute>,
-        loader: ({params}) => fetch(`https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/product/${params.id}`)
+        loader: ({params}) => fetch(`  https://teachfausion-server-site-jbxvnszc0-shajada-nirobs-projects.vercel.app/product/${params.id}`)
        }
       ]
     },
