@@ -27,6 +27,9 @@ const Navbar = () => {
 
 
 
+    
+
+
 
 
       const NabLinks = <>
@@ -54,7 +57,7 @@ const Navbar = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
-            TechFusionHub
+            <img className="w-[260px]" src="https://i.ibb.co/MgtkWyD/1519798591013.jpg" alt="" />
             </div>
           </div>
           <div className="hidden md:flex space-x-4 text-black font-semibold ">

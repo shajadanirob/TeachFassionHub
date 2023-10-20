@@ -7,12 +7,14 @@ import OurTeam from "../../Components/OurTeam/OurTeam";
 
 const Home = () => {
     return (
-        <div className="my-5">
+        <div>
            <Banner></Banner>
-           <BrandCategory></BrandCategory>
+         <div className="my-5">
+         <BrandCategory></BrandCategory>
            <Discount></Discount>
            <OurTeam></OurTeam>
            <FreeShiping></FreeShiping>
+         </div>
         </div>
     );
 };

@@ -8,15 +8,12 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <div className="flex items-center space-x-2">
-      <button
-        className={`bg-gray-200 dark:bg-dark text-gray-800 dark:text-dark rounded-full p-2 focus:outline-none`}
-        onClick={toggleDarkMode}
-      >
-        {darkMode ? 'Light Mode' : 'Dark Mode'}
-      </button>
-      <div className={`w-8 h-8 rounded-full ${darkMode ? 'bg-dark' : 'bg-gray-200'}`} />
-    </div>
+    <button
+    onClick={toggleDarkMode}
+    className={`bg-gray-200 dark:bg-gray-800 p-2 rounded-full focus:outline-none focus:ring`}
+  >
+    {darkMode ? 'Light Mode' : 'Dark Mode'}
+  </button>
   );
 };
 
