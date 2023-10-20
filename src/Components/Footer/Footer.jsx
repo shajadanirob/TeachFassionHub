@@ -9,21 +9,15 @@ const Footer = () => {
   <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
     <div className="sm:col-span-2">
       <a href="/" aria-label="Go home" title="Company" className="inline-flex items-center">
-        <svg className="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-          <rect x="3" y="1" width="7" height="12"></rect>
-          <rect x="3" y="17" width="7" height="6"></rect>
-          <rect x="14" y="1" width="7" height="6"></rect>
-          <rect x="14" y="11" width="7" height="12"></rect>
-        </svg>
-        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
+        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+        <img className="w-[260px]" src="https://i.ibb.co/MgtkWyD/1519798591013.jpg" alt="" />
+        </span>
       </a>
       <div className="mt-6 lg:max-w-sm">
         <p className="text-sm text-gray-800">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        Where Innovation Meets Expertise. Explore the future of technology and electronics with us. From cutting-edge gadgets to in-depth guides, we're your source for all things tech. Join our digital journey, where every click brings you closer to the digital world's wonders.
         </p>
-        <p className="mt-4 text-sm text-gray-800">
-          Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-        </p>
+      
       </div>
     </div>
     <div className="space-y-2 text-sm">
@@ -69,9 +63,7 @@ const Footer = () => {
           </svg>
         </a>
       </div>
-      <p className="mt-4 text-sm text-gray-500">
-        Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
-      </p>
+     
     </div>
   </div>
   <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
