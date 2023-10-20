@@ -117,7 +117,7 @@ const Register = () => {
                             <div className="w-full lg:w-auto px-4 mb-4 lg:mb-0">
                             </div>
                         </div>
-                        <button className="inline-block w-full py-4 px-6 mb-6 text-center text-lg leading-6 text-white font-extrabold bg-[#FF630E]  border-3 border-indigo-900 shadow rounded transition duration-200">Register Now</button>
+                        <button className="inline-block w-full py-4 px-6 mb-6 text-center text-lg leading-6 text-white font-extrabold bg-[#8696a0]  border-3 border-indigo-900 shadow rounded transition duration-200">Register Now</button>
 
 
 

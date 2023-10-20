@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 
 
 const AddProducts = () => {
@@ -25,7 +26,17 @@ const AddProducts = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        console.log(data)
+        if(data.insertedId){
+          Swal.fire({
+              position: 'center',
+              icon: 'success',
+              title: 'Your product update successFully',
+              showConfirmButton: false,
+              timer: 1500
+            })
+            form.reset()
+      }
       });
   };
 

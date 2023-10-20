@@ -7,6 +7,9 @@ import Login from "../Pages/Login/Login";
 import ProductsCategory from "../Components/ProductCategory/ProductsCategory";
 import ProductsDetails from "../Components/ProductDetails/ProductsDetails";
 import UpdateProducts from "../Components/UpdateProducts/UpdateProducts";
+import Register from "../Pages/Register/Register";
+import PrivetRoute from "../PrivetRoute/PrivetRoute";
+
 
 const router = createBrowserRouter([
     {
@@ -26,24 +29,36 @@ const router = createBrowserRouter([
         },
         {
             path:'/addProducts',
-            element:<AddProducts></AddProducts>
+            element:<PrivetRoute>
+              <AddProducts></AddProducts>
+            </PrivetRoute>
         },
        {
         path:'/myCart',
-        element: <MyCart></MyCart>
+        element: <PrivetRoute>
+          <MyCart></MyCart>
+        </PrivetRoute>,
+        loader: () => fetch('http://localhost:5000/addCard')
        },
        {
         path:'/login',
         element: <Login></Login>
        },
        {
+        path:'/register',
+        element:<Register></Register>
+
+       },
+       {
         path:'/details/:id',
-        element: <ProductsDetails></ProductsDetails>,
+        element: <PrivetRoute>
+          <ProductsDetails></ProductsDetails>
+        </PrivetRoute>,
         loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
        },
        {
         path:'/update/:id',
-        element:<UpdateProducts></UpdateProducts>,
+        element:<PrivetRoute><UpdateProducts></UpdateProducts></PrivetRoute>,
         loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
        }
       ]

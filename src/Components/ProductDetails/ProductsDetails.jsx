@@ -1,9 +1,38 @@
 import { useLoaderData } from "react-router-dom";
+import UseAuth from "../../Hooks/UseAuth";
+import Swal from "sweetalert2";
 
 
 const ProductsDetails = () => {
     const loader = useLoaderData()
     console.log(loader)
+    
+
+    const HandleAddCard = event =>{
+        
+        event.preventDefault()
+        fetch("http://localhost:5000/addCards", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(loader),
+          })
+                .then((res) => res.json())
+                .then((data) => {
+                  console.log(data);
+                  Swal.fire(
+                    'Added',
+                    'Your product has been add my cart.',
+                    'success'
+                  )
+                  
+                });
+            };
+    
+
+
+
     return (
         <div>
 
@@ -16,7 +45,7 @@ const ProductsDetails = () => {
                 </div>
                 <div className="flex -mx-2 mb-4">
                     <div className="w-1/2 px-2">
-                        <button className="w-full bg-[#8696a0] dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-[#8696a0]dark:hover:bg-gray-700">Add to Cart</button>
+                        <button onClick={HandleAddCard} className="w-full bg-[#8696a0] dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-[#8696a0]dark:hover:bg-gray-700">Add to Cart</button>
                     </div>
                 
                 </div>
@@ -56,10 +85,6 @@ const ProductsDetails = () => {
 </div>
 
 
-
-
-            <h1>Products details:{loader.brand}</h1>
-            <p>{loader.ProductDetails}</p>
 
 
         </div>

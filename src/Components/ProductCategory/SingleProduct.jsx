@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 
-
 const SingleProduct = ({data}) => {
-    
-    const{brand,image,ProductDetails,price,_id} = data 
+
+    const{productName,brand,image,ProductDetails,price,_id,rating} = data 
     return (
         <div>
         
@@ -15,10 +14,12 @@ const SingleProduct = ({data}) => {
 
 
             <div className="my-5">
-              <h2 className="text-black text-center font-semibold">{brand}</h2>
+              <h2 className="text-black text-center font-semibold">{productName}</h2>
               <p className="text-black text-center font-semibold text-xl my-5">{ProductDetails.slice(0,80)}</p>
                
               <p className="text-[#CFAF00]  text-center font-semibold text-xl my-5">${price}</p>
+
+
                
             </div>
             <Link to={`/details/${_id}`} className="flex justify-center items-center">
@@ -27,11 +28,9 @@ const SingleProduct = ({data}) => {
 
             <div className="flex items-center justify-center gap-4 my-2">
                 <Link to={`/update/${_id}`}>
-<button className="btn">Up</button>
+<button className="btn bg-[#8696a0] text-white">UpDate</button>
                 </Link>
-                <div>
-                <button className="btn">Dt</button>
-                </div>
+  
             </div>
 
 

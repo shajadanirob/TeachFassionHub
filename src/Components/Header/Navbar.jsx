@@ -23,7 +23,7 @@ const Navbar = () => {
         })
     }
 
-
+ 
 
 
 
@@ -76,6 +76,11 @@ const Navbar = () => {
             <button className="btn bg-[#8696a0] text-white">Login</button>
             </Link></>
           } 
+        
+
+
+
+
         
           </div>
           <div className="md:hidden flex items-center">
