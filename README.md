@@ -8,4 +8,4 @@ About this website
 - and clients update delete produtcs
 - this web site use authuntication
 - this web site have login from and register from
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [@websiteLink](https://techfusionhub-c1573.web.app/)
