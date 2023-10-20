@@ -9,57 +9,66 @@ import ProductsDetails from "../Components/ProductDetails/ProductsDetails";
 import UpdateProducts from "../Components/UpdateProducts/UpdateProducts";
 import Register from "../Pages/Register/Register";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
+import Error from "../Components/Error/Error";
 
 
 const router = createBrowserRouter([
     {
       path: '/',
+      errorElement:<Error></Error>,
       element: <MainLayout></MainLayout>,
       children:[
         {
             path:'/',
             element:<Home></Home>,
-            loader:() =>  fetch('http://localhost:5000/products')
+            loader:() =>  fetch('https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/products')
         },
         {
           path:'/products/:brand',
+          errorElement:<Error></Error>,
           element:<ProductsCategory></ProductsCategory>,
-          loader:({params})=>fetch(`http://localhost:5000/products/${params.brand}`)
+          loader:({params})=>fetch(`https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/products/${params.brand}`)
 
         },
         {
             path:'/addProducts',
+            errorElement:<Error></Error>,
             element:<PrivetRoute>
               <AddProducts></AddProducts>
             </PrivetRoute>
         },
        {
         path:'/myCart',
+        errorElement:<Error></Error>,
         element: <PrivetRoute>
           <MyCart></MyCart>
         </PrivetRoute>,
-        loader: () => fetch('http://localhost:5000/addCard')
+        loader: () => fetch('https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/addCard')
        },
        {
         path:'/login',
+        errorElement:<Error></Error>,
         element: <Login></Login>
        },
        {
         path:'/register',
+        errorElement:<Error></Error>,
         element:<Register></Register>
 
        },
        {
         path:'/details/:id',
+        errorElement:<Error></Error>,
         element: <PrivetRoute>
           <ProductsDetails></ProductsDetails>
         </PrivetRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({params}) => fetch(`https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/product/${params.id}`)
        },
        {
         path:'/update/:id',
+        errorElement:<Error></Error>,
         element:<PrivetRoute><UpdateProducts></UpdateProducts></PrivetRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({params}) => fetch(`https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/product/${params.id}`)
        }
       ]
     },

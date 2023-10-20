@@ -57,7 +57,7 @@ const handleGooglelogin = e =>{
 
        <div>
        <div className="flex justify-center items-center">
-            <img className="w-[70px] md:w-[150px]" src="https://i.ibb.co/4WYqmTH/71854-eduhub-logo-Pos-1200x600.jpg" alt="" />
+       <img className="w-[260px]" src="https://i.ibb.co/MgtkWyD/1519798591013.jpg" alt="" />
         </div>
        </div>
 

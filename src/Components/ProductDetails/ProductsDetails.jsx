@@ -11,7 +11,7 @@ const ProductsDetails = () => {
     const HandleAddCard = event =>{
         
         event.preventDefault()
-        fetch("http://localhost:5000/addCards", {
+        fetch("https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/addCards", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

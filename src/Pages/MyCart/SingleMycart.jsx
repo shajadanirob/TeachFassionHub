@@ -7,7 +7,7 @@ const SingleMycart = ({data}) => {
 
 const handleDelete = _id =>{
     console.log(_id)
-    fetch(`http://localhost:5000/addCard/${_id}`,{
+    fetch(`https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/addCard/${_id}`,{
         method:'DELETE'
     })
     .then(res => res.json())

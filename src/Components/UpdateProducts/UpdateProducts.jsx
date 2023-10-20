@@ -20,7 +20,7 @@ const UpdateProducts = () => {
     
         const products = { productName, brand, category, price, rating, ProductDetails, image }
     
-        fetch(`http://localhost:5000/update/${lodar._id}`, {
+        fetch(`https://teachfausion-server-site-9m7h73cza-shajada-nirobs-projects.vercel.app/update/${lodar._id}`, {
           method: "PUT",
           headers: {
             'content-type': 'application/json'
