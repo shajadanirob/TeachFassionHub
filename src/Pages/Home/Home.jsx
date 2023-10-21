@@ -7,9 +7,9 @@ import OurTeam from "../../Components/OurTeam/OurTeam";
 
 const Home = () => {
     return (
-        <div>
+        <div className="dark:bg-black">
            <Banner></Banner>
-         <div className="my-5">
+         <div className="my-5 dark:bg-black ">
          <BrandCategory></BrandCategory>
            <Discount></Discount>
            <OurTeam></OurTeam>

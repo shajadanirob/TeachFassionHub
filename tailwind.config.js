@@ -4,14 +4,10 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode :'class',
   theme: {
     extend: {
-      backgroundColor: {
-        'dark': '#333', // Define your dark mode background color
-      },
-      textColor: {
-        'dark': '#fff', // Define your dark mode text color
-      },
+     
     },
   },
   plugins: [require("daisyui")],

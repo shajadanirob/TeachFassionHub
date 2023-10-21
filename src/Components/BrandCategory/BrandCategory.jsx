@@ -16,10 +16,10 @@ const BrandCategory = () => {
 
 
     return (
-       <div className="max-w-screen-xl mx-auto px-8 md:px-8 lg:px-24 py-5 my-5 ">
+       <div className="max-w-screen-xl mx-auto px-8 md:px-8 lg:px-24 py-5 dark:bg-black my-5 ">
 
 
-<h1 className="text-3xl sm:text-4xl text-center my-5 leading-normal font-extrabold tracking-tight text-[#1a1c28]">Our Brand</h1>
+<h1 className="text-3xl sm:text-4xl text-center my-5 leading-normal font-extrabold tracking-tight dark:text-white  text-[#1a1c28]">Our Brand</h1>
         
 <div className="flex flex-col md:grid md:grid-cols-3 gap-3">
  {

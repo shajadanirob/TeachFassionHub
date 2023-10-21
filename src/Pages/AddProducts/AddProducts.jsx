@@ -46,24 +46,24 @@ const AddProducts = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-8 md:px-8 lg:px-24 py-5 my-5">
 
-      <div className="bg-white  border-4 rounded-lg shadow relative m-10">
-        <h2 className="text-3xl sm:text-4xl text-center font-semibold my-5 text-[#1a1c28]">Add Products</h2>
+      <div className="bg-white dark:bg-black  border-4 rounded-lg shadow relative m-10">
+        <h2 className="text-3xl sm:text-4xl text-center font-semibold my-5 dark:text-white text-[#1a1c28]">Add Products</h2>
 
 
         <div className="p-6 space-y-6">
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-6 gap-6">
               <div className="col-span-6 sm:col-span-3">
-                <label for="product-name" className="text-sm font-medium text-gray-900 block mb-2">Product Name</label>
-                <input type="text" name="productName" id="product-name" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5" placeholder="Product Name" required="" />
+                <label for="product-name" className="text-sm font-medium text-gray-900 dark:text-white block mb-2">Product Name</label>
+                <input type="text" name="productName" id="product-name" className="shadow-sm bg-gray-50  border border-gray-300  dark:border-black dark:text-white text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5" placeholder="Product Name" required="" />
               </div>
 
               <div className="col-span-6 sm:col-span-3">
-                <label for="category" className="text-sm font-medium text-gray-900 block mb-2">Category</label>
+                <label for="category" className="text-sm font-medium text-gray-900 block mb-2 dark:text-white">Category</label>
                 <input type="text" name="category" id="category" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5" placeholder="Electronics" required="" />
               </div>
               <div className="col-span-6 sm:col-span-3">
-                <label for="brand" className="text-sm font-medium text-gray-900 block mb-2">Brand</label>
+                <label for="brand" className="text-sm font-medium text-gray-900 block mb-2 dark:text-white">Brand</label>
              
 
                 <select className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5" name="brand" required id="">
@@ -77,7 +77,7 @@ const AddProducts = () => {
                 </select>
               </div>
               <div className="col-span-6 sm:col-span-3">
-                <label for="price" className="text-sm font-medium text-gray-900 block mb-2">Price</label>
+                <label for="price" className="text-sm font-medium text-gray-900 block mb-2 dark:text-white">Price</label>
                 <input type="number" name="price" id="price" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5" placeholder="$2300" required="" />
               </div>
 
@@ -86,14 +86,14 @@ const AddProducts = () => {
 
 
               <div className="col-span-6 sm:col-span-3">
-                <label for="brand" className="text-sm font-medium text-gray-900 block mb-2">Image</label>
+                <label for="brand" className="text-sm font-medium text-gray-900 block mb-2 dark:text-white">Image</label>
                 <input type="text" name="image" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5" placeholder="Image" required="" />
               </div>
 
 
 
               <div className="col-span-6 sm:col-span-3">
-                <label for="brand" className="text-sm font-medium text-gray-900 block mb-2">Rating</label>
+                <label for="brand" className="text-sm font-medium text-gray-900 block mb-2 dark:text-white">Rating</label>
                 <input type="text" name="rating" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5" placeholder="Rating" required="" />
               </div>
 
@@ -105,7 +105,7 @@ const AddProducts = () => {
 
 
               <div className="col-span-full">
-                <label for="product-details" className="text-sm font-medium text-gray-900 block mb-2">Product Details</label>
+                <label for="product-details" className="text-sm font-medium text-gray-900 block mb-2 dark:text-white">Product Details</label>
                 <textarea id="product-details" rows="6" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-4" placeholder="Details" name="ProductDetails"></textarea>
               </div>
             </div>

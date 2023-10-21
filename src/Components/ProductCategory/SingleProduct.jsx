@@ -14,10 +14,10 @@ const SingleProduct = ({data}) => {
 
 
             <div className="my-5">
-              <h2 className="text-black text-center font-semibold">{productName}</h2>
-              <p className="text-black text-center font-semibold text-xl my-5">{ProductDetails.slice(0,80)}</p>
+              <h2 className="text-black dark:text-white text-center font-semibold">{productName}</h2>
+              <p className="text-black dark:text-white text-center font-semibold text-xl my-5">{ProductDetails.slice(0,80)}</p>
                
-              <p className="text-[#CFAF00]  text-center font-semibold text-xl my-5">${price}</p>
+              <p className="text-[#CFAF00]  text-center font-semibold text-xl dark:text-white my-5">${price}</p>
 
 
               <div className="flex justify-center flex-row items-center justify-start gap-2 text-2xl">
