@@ -1,27 +1,11 @@
 import Swal from "sweetalert2";
 
 
-const SingleMycart = ({data}) => {
+const SingleMycart = ({data,handleDelete}) => {
  const {_id,productName,image,price,ProductDetails} = data
  
 
-const handleDelete = _id =>{
-    console.log(_id)
-    fetch(`  https://teachfausion-server-site-jbxvnszc0-shajada-nirobs-projects.vercel.app/addCard/${_id}`,{
-        method:'DELETE'
-    })
-    .then(res => res.json())
-    .then(data => {
-        console.log(data)
-        if(data.deletedCount >0){
-            Swal.fire(
-                'Deleted!',
-                'Your file has been deleted.',
-                'success'
-              )
-        }
-    } )
-}
+
 
 
 
