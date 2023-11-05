@@ -62,7 +62,7 @@ const toggleDarkMode = () => {
 
   
     return (
-        <nav className="bg-base-100 p-4 font-sans dark:bg-black ">
+        <nav className="bg-base-100 p-4 font-sans dark:bg-[#343434] ">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <div className="flex items-center">

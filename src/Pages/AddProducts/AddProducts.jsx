@@ -46,7 +46,7 @@ const AddProducts = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-8 md:px-8 lg:px-24 py-5 my-5">
 
-      <div className="bg-white dark:bg-black  border-4 rounded-lg shadow relative m-10">
+      <div className="bg-white dark:bg-[#343434]  border-4 rounded-lg shadow relative m-10">
         <h2 className="text-3xl sm:text-4xl text-center font-semibold my-5 dark:text-white text-[#1a1c28]">Add Products</h2>
 
 

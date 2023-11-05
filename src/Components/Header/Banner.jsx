@@ -1,6 +1,6 @@
 const Banner = () => {
     return (
-        <div className="flex pt-12 px-6 md:px-20  items-center justify-center bg-hero md:h-screen overflow-hidden dark:bg-black">
+        <div className="flex pt-12 px-6 md:px-20  items-center justify-center bg-hero md:h-screen overflow-hidden dark:bg-[#343434]">
     <div className="flex flex-col-reverse  gap-6 md:flex-row items-center max-w-8xl">
         <div className="w-full md:w-1/2 lg:pr-32 ">
             <p className="text-center md:text-left dark:text-white text-[#1a1c28] my-5">2022 COLLECTION</p>

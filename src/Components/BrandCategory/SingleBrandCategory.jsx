@@ -4,7 +4,7 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const SingleBrandCategory = ({data}) => {
     const{image,category} =data
-    const lodedData = useLoaderData()
+   
 
 
 

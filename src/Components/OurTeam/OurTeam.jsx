@@ -15,7 +15,7 @@ const OurTeam = () => {
   
           <div className="grid grid-cols-3 col-gap-10">
   
-              <div className="text-center dark:bg-black bg-white">
+              <div className="text-center dark:bg-[#3a413c] bg-white">
                   <img className="w-100" src="https://images.pexels.com/photos/1587014/pexels-photo-1587014.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"/>
                   <div className="p-4">
                       <div className="text-md">
@@ -32,7 +32,7 @@ const OurTeam = () => {
                   </div>
   
               </div>
-              <div className="text-center dark:bg-black bg-white">
+              <div className="text-center dark:bg-[#3a413c] bg-white">
                   <img className="w-100" src="https://images.pexels.com/photos/2897883/pexels-photo-2897883.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"/>
                   <div className="p-4">
                       <div className="text-md">
@@ -48,7 +48,7 @@ const OurTeam = () => {
                   </div>
   
               </div>
-              <div className="text-center dark:bg-black  bg-white">
+              <div className="text-center dark:bg-[#3a413c]  bg-white">
                   <img className="w-100" src="https://images.pexels.com/photos/3778680/pexels-photo-3778680.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"/>
                   <div className="p-4">
                       <div className="text-md">

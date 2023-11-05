@@ -11,8 +11,8 @@ const SingleMycart = ({data,handleDelete}) => {
 
     return (
      <div>
-    <div className="relative flex flex-col text-gray-700 bg-white dark:bg-black shadow-md  rounded-xl bg-clip-border">
-  <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white dark:bg-black  h-96 rounded-xl bg-clip-border">
+    <div className="relative flex flex-col text-gray-700 bg-white dark:bg-[#343434] shadow-md  rounded-xl bg-clip-border">
+  <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white dark:bg-[#343434]  h-96 rounded-xl bg-clip-border">
     <img
       src={image}
       className="object-cover w-full h-full"

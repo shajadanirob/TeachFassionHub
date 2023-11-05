@@ -15,7 +15,7 @@ const Discount = () => {
 
 
 <div
-    className="max-w-lg dark:bg-black bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
+    className="max-w-lg dark:bg-[#3a413c] bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
   
     <div className="flex flex-col p-12 md:px-16">
         <p className="text-[#1a1c28] dark:text-white my-2">FEATURED MAC ACCESSORIES</p>
@@ -47,7 +47,7 @@ connection</h2>
 
 
 <div
-    className="max-w-lg dark:bg-black  bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-80">
+    className="max-w-lg dark:bg-[#3a413c]  bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-80">
   
     <div className="flex flex-col p-12 md:px-16">
         <p className="dark:text-white text-[#1a1c28] my-2">Get new smartphone! Nokia</p>
